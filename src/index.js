@@ -13,6 +13,6 @@ module.exports = function toReadable (number) {
         }
 
     else if (number > 20 && number <= 29) {
-        return `twenty ${numStr1[number.toString()[1]]}`;
+        return `twenty ${numStr1[number % 10]}`;
         }
 }
