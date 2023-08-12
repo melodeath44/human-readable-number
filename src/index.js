@@ -13,7 +13,7 @@ module.exports = function toReadable(number) {
     } else if (number >= 21 && number <= 29) {
         const x = 'twenty';
         const lastNum = number % 10;
-        const str = numStr1[lastNum - 1]
+        const str = numStr1[lastNum]
         return `${x} ${str}`;
     }
 }
