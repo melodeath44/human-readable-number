@@ -4,7 +4,7 @@ module.exports = function toReadable(number) {
     'nine', 'ten', 'eleven', 'twelve', 'thirteen', 'fourteen', 'fifteen', 'sixteen', 'seventeen',
      'eighteen','nineteen', 'twenty']
 
-    const numStr1 = [' one', ' two', ' three', ' four', ' five', ' six', ' seven', ' eight',
+    const numStr1 = ['one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight',
        'nine']
 
     if(num[number]) {
@@ -13,7 +13,7 @@ module.exports = function toReadable(number) {
     } else if (number >= 21 && number <= 29) {
         const x = 'twenty';
         const lastNum = number % 10;
-        const str = numStr1[lastNum]
-        return `${x}' '${str}`;
+        const str = numStr1[lastNum - 1]
+        return `${x}${str}`;
     }
 }
