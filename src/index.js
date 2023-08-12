@@ -10,7 +10,7 @@ module.exports = function toReadable (number) {
   }
   const numStr1 = ['one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight',
     'nine']
-    if(number[0] == 2 && number.length === 2){
-        return `twenty ${[numStr1[number[1]]]}`;
+    if(number,toString()[0] === 2 && number.toString().length === 2){
+        return `twenty ${[numStr1[number.toString()[1]]]}`;
     }
 }
