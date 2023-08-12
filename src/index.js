@@ -4,13 +4,13 @@ module.exports = function toReadable(number) {
     'nine', 'ten', 'eleven', 'twelve', 'thirteen', 'fourteen', 'fifteen', 'sixteen', 'seventeen',
      'eighteen','nineteen', 'twenty']
 
-    const numStr1 = ['one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight',
+    const numStr1 = [' one', ' two', ' three', ' four', ' five', ' six', ' seven', ' eight',
        'nine']
 
-    if(number == 0 && number <= 20 && num[number]) {
+    if(num[number]) {
         const numOne = numStr[number];
         return numOne;
     } else if (number >= 21 && number <= 29) {
-        return `twenty ' '${numStr1[number % 10]}`;
+        return `twenty${numStr1[number % 10]}`;
     }
 }
