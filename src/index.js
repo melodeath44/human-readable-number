@@ -5,8 +5,13 @@ module.exports = function toReadable (number) {
      'eighteen','nineteen', 'twenty']
 
   if(num[number]){
-    return numStr[number]
-
-
+    const numOne = numStr[number]
+    return numOne;
   }
+  const num1 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+  const numStr1 = ['one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight',
+    'nine']
+    if(number[0] == 2 && number.length === 3){
+        return 'twenty' + numStr1[number[1]];
+    }
 }
