@@ -7,10 +7,10 @@ module.exports = function toReadable(number) {
     const numStr1 = ['one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight',
        'nine']
 
-    if(num[number]) {
+    if(number == 0 && number <= 20 && num[number]) {
         const numOne = numStr[number];
         return numOne;
     } else if (number >= 21 && number <= 29) {
-        return `twenty-${numStr1[number % 10]}`;
+        return `twenty ' '${numStr1[number % 10]}`;
     }
 }
