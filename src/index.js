@@ -11,6 +11,6 @@ module.exports = function toReadable(number) {
         const numOne = numStr[number];
         return numOne;
     } else if (number >= 21 && number <= 29) {
-        return `twenty' '${numStr1[number % 10]}`;
+        return `twenty-${numStr1[number % 10]}`;
     }
 }
