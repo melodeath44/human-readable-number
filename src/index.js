@@ -14,6 +14,6 @@ module.exports = function toReadable(number) {
         const x = 'twenty';
         const lastNum = number % 10;
         const str = numStr1[lastNum]
-        return `${x} ${str}`;
+        return `${x}-${str}`;
     }
 }
