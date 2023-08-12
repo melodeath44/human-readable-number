@@ -12,7 +12,7 @@ module.exports = function toReadable (number) {
     return numOne;
         }
 
-    else if (number.toString()[0] === '2' && number.toString().length === 2) {
+    else if (number > 20 && number <= 29) {
         return `twenty ${numStr1[number.toString()[1]]}`;
         }
 }
