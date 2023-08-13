@@ -182,7 +182,7 @@ module.exports = function toReadable(number) {
         return numOne;
     }
     else if (number >= 101 && number <= 199) {
-        const newNum = number.toString().substring(1);
+        const newNum = number.toString().substr(1);
         return `one hundred ${numStr[+newNum]}`;
     }
 };
