@@ -120,4 +120,52 @@ module.exports = function toReadable(number) {
         const finishNum = parseInt(newNumSlice);
         return `one hundred ${numStr[finishNum]}`;
     }
+    else if (number >= 201 && number <= 299) {
+        const newNumStr = number.toString();
+        const newNumSlice = newNumStr.slice(1);
+        const finishNum = parseInt(newNumSlice);
+        return `two hundred ${numStr[finishNum]}`;
+    }
+    else if (number >= 301 && number <= 399) {
+        const newNumStr = number.toString();
+        const newNumSlice = newNumStr.slice(1);
+        const finishNum = parseInt(newNumSlice);
+        return `three hundred ${numStr[finishNum]}`;
+    }
+    else if (number >= 401 && number <= 499) {
+        const newNumStr = number.toString();
+        const newNumSlice = newNumStr.slice(1);
+        const finishNum = parseInt(newNumSlice);
+        return `four hundred ${numStr[finishNum]}`;
+    }
+    else if (number >= 501 && number <= 599) {
+        const newNumStr = number.toString();
+        const newNumSlice = newNumStr.slice(1);
+        const finishNum = parseInt(newNumSlice);
+        return `five hundred ${numStr[finishNum]}`;
+    }
+    else if (number >= 601 && number <= 699) {
+        const newNumStr = number.toString();
+        const newNumSlice = newNumStr.slice(1);
+        const finishNum = parseInt(newNumSlice);
+        return `six hundred ${numStr[finishNum]}`;
+    }
+    else if (number >= 701 && number <= 799) {
+        const newNumStr = number.toString();
+        const newNumSlice = newNumStr.slice(1);
+        const finishNum = parseInt(newNumSlice);
+        return `seven hundred ${numStr[finishNum]}`;
+    }
+    else if (number >= 801 && number <= 899) {
+        const newNumStr = number.toString();
+        const newNumSlice = newNumStr.slice(1);
+        const finishNum = parseInt(newNumSlice);
+        return `eight hundred ${numStr[finishNum]}`;
+    }
+    else if (number >= 901 && number <= 999) {
+        const newNumStr = number.toString();
+        const newNumSlice = newNumStr.slice(1);
+        const finishNum = parseInt(newNumSlice);
+        return `nine hundred ${numStr[finishNum]}`;
+    }
 };
