@@ -183,6 +183,6 @@ module.exports = function toReadable(number) {
     }
     else if(number >= 101 && number <=199){
         const newNum = toString().number.substring(1);
-        return `one hundred ${numStr[newNum]}`
+        return `one hundred ${numStr[+newNum]}`
     }
 };
