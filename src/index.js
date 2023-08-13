@@ -185,6 +185,6 @@ module.exports = function toReadable(number) {
         const newNumStr = number.toString();
         const newNumSlice = newNumStr.slice(1);
         const finishNum = +newNumSlice;
-        return `${numStr[101]} ${numStr[finishNum]}`;
+        return `${numStr[100]} ${numStr[finishNum]}`;
     }
 };
