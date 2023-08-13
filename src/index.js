@@ -168,4 +168,28 @@ module.exports = function toReadable(number) {
         const finishNum = parseInt(newNumSlice);
         return `nine hundred ${numStr[finishNum]}`;
     }
+    else if(number === 200){
+        return 'two hundred'
+    }
+    else if(number === 300){
+        return 'three hundred'
+    }
+    else if(number === 400){
+        return 'four hundred'
+    }
+    else if(number === 500){
+        return 'five hundred'
+    }
+    else if(number === 600){
+        return 'six hundred'
+    }
+    else if(number === 700){
+        return 'seven hundred'
+    }
+    else if(number === 800){
+        return 'eight hundred'
+    }
+    else if(number === 900){
+        return 'nine hundred'
+    }
 };
