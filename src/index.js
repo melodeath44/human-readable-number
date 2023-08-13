@@ -5,7 +5,8 @@ module.exports = function toReadable(number) {
         39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56,
         57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74,
         75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92,
-        93, 94, 95, 96, 97, 98, 99, 100];
+        93, 94, 95, 96, 97, 98, 99, 100,
+    ];
     const numStr = [
         "zero",
         "one",
@@ -107,89 +108,74 @@ module.exports = function toReadable(number) {
         "ninety seven",
         "ninety eight",
         "ninety nine",
-        "one hundred"
+        "one hundred",
     ];
 
     if (num[number]) {
         const numOne = numStr[number];
         return numOne;
-    }
-    else if (number >= 101 && number <= 199) {
+    } else if (number >= 101 && number <= 199) {
         const newNumStr = number.toString();
         const newNumSlice = newNumStr.slice(1);
         const finishNum = parseInt(newNumSlice);
         return `one hundred ${numStr[finishNum]}`;
-    }
-    else if (number >= 201 && number <= 299) {
+    } else if (number >= 201 && number <= 299) {
         const newNumStr = number.toString();
         const newNumSlice = newNumStr.slice(1);
         const finishNum = parseInt(newNumSlice);
         return `two hundred ${numStr[finishNum]}`;
-    }
-    else if (number >= 301 && number <= 399) {
+    } else if (number >= 301 && number <= 399) {
         const newNumStr = number.toString();
         const newNumSlice = newNumStr.slice(1);
         const finishNum = parseInt(newNumSlice);
         return `three hundred ${numStr[finishNum]}`;
-    }
-    else if (number >= 401 && number <= 499) {
+    } else if (number >= 401 && number <= 499) {
         const newNumStr = number.toString();
         const newNumSlice = newNumStr.slice(1);
         const finishNum = parseInt(newNumSlice);
         return `four hundred ${numStr[finishNum]}`;
-    }
-    else if (number >= 501 && number <= 599) {
+    } else if (number >= 501 && number <= 599) {
         const newNumStr = number.toString();
         const newNumSlice = newNumStr.slice(1);
         const finishNum = parseInt(newNumSlice);
         return `five hundred ${numStr[finishNum]}`;
-    }
-    else if (number >= 601 && number <= 699) {
+    } else if (number >= 601 && number <= 699) {
         const newNumStr = number.toString();
         const newNumSlice = newNumStr.slice(1);
         const finishNum = parseInt(newNumSlice);
         return `six hundred ${numStr[finishNum]}`;
-    }
-    else if (number >= 701 && number <= 799) {
+    } else if (number >= 701 && number <= 799) {
         const newNumStr = number.toString();
         const newNumSlice = newNumStr.slice(1);
         const finishNum = parseInt(newNumSlice);
         return `seven hundred ${numStr[finishNum]}`;
-    }
-    else if (number >= 801 && number <= 899) {
+    } else if (number >= 801 && number <= 899) {
         const newNumStr = number.toString();
         const newNumSlice = newNumStr.slice(1);
         const finishNum = parseInt(newNumSlice);
         return `eight hundred ${numStr[finishNum]}`;
-    }
-    else if (number >= 901 && number <= 999) {
+    } else if (number >= 901 && number <= 999) {
         const newNumStr = number.toString();
         const newNumSlice = newNumStr.slice(1);
         const finishNum = parseInt(newNumSlice);
         return `nine hundred ${numStr[finishNum]}`;
-    }
-    else if(number === 200){
-        return 'two hundred'
-    }
-    else if(number === 300){
-        return 'three hundred'
-    }
-    else if(number === 400){
-        return 'four hundred'
-    }
-    else if(number === 500){
-        return 'five hundred'
-    }
-    else if(number === 600){
-        return 'six hundred'
-    }
-    else if(number === 700){
-        return 'seven hundred'
-    }
-    else if(number === 800){
-        return 'eight hundred'
-    }
-    else if(number === 900){
-        return 'nine hundred'
+    } else if (number === 100) {
+        return numStr[100];
+    } else if (number === 200) {
+        return "two hundred";
+    } else if (number === 300) {
+        return "three hundred";
+    } else if (number === 400) {
+        return "four hundred";
+    } else if (number === 500) {
+        return "five hundred";
+    } else if (number === 600) {
+        return "six hundred";
+    } else if (number === 700) {
+        return "seven hundred";
+    } else if (number === 800) {
+        return "eight hundred";
+    } else if (number === 900) {
+        return "nine hundred";
     }
 };
