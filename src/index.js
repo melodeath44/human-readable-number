@@ -175,15 +175,14 @@ module.exports = function toReadable(number) {
         "one hundred"
     ];
 
-    const newNumSplit = number.split('');
-    const newNumShift = newNumSplit.shift();
-    const newNumJoin = newNumShift.shift('');
+    
 
     if (num[number]) {
         const numOne = numStr[number];
         return numOne;
     }
     else if(number >= 101 && number <=199){
-        return `one hundred ${numStr[newNumJoin]}`
+        const newNum = toString().number.substring(1);
+        return `one hundred ${numStr[newNum]}`
     }
 };
