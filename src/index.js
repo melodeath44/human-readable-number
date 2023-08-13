@@ -184,7 +184,7 @@ module.exports = function toReadable(number) {
     else if (num[number] >= 101 && num[number] <= 199) {
         const newNumStr = number.toString();
         const newNumSlice = newNumStr.slice(1);
-        const finishNum = parseInt(newNumSlice)
+        const finishNum = +newNumSlice;
         return `${numStr[101]} ${numStr[finishNum]}`;
     }
 };
